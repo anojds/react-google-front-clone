@@ -1,12 +1,12 @@
 import Header from "../components/header";
-import Center from "../components/center";
+import Search from "../components/search";
 import Footer from "../components/footer";
 
 const Main = () => {
   return (
     <>
       <Header />
-      <Center />
+      <Search />
       <Footer />
     </>
   );

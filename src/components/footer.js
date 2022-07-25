@@ -1,18 +1,37 @@
-import Text from "./hrefText";
-import "../footer.css";
+import styled from "styled-components";
 
 const Footer = () => {
-  return (
-    <>
-      <div class="footerWrap">
-        <Text text="광고" color="#bdc1c6" fontsize="14px"></Text>
-        <Text text="비즈니스" color="#bdc1c6" fontsize="14px"></Text>
-        <Text text="검색의 원리" color="#bdc1c6" fontsize="14px"></Text>
-        <Text text="개인정보 처리방침" color="#bdc1c6" fontsize="14px"></Text>
-        <Text text="약관" color="#bdc1c6" fontsize="14px"></Text>
-        <Text text="설정" color="#bdc1c6" fontsize="14px"></Text>
-      </div>
-    </>
-  );
+    return (
+        <>
+            <FooterWrap>
+                <div>
+                    <Text>광고</Text>
+                    <Text>비즈니스</Text>
+                    <Text>검색의 원리</Text>
+                </div>
+                <div>
+                    <Text>개인정보 처리방침</Text>
+                    <Text>약관</Text>
+                    <Text>설정</Text>
+                </div>
+            </FooterWrap>
+        </>
+    );
 };
+
+const FooterWrap = styled.div`
+    background-color: #171717;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+`;
+
+const Text = styled.span`
+    color: #999da2;
+    font-size: 14px;
+    margin: 10px
+`;
+
 export default Footer;
